@@ -4,22 +4,43 @@
     box-sizing: border-box;   
 }
 
-.small{
-    width: 100%;
+.container {
     margin: 0 auto;
+    text-align: center;
+}
+.kitty{
+    width:40%;  
+    padding-top: 200px;
+}
+
+.small{
+    background-image:url("../assets/images/Copia\ de\ night.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+
 }
 
 .medium {
+    background-size: cover;
+    background-position: center;
     width:100%;
     margin: 0 auto;
     display: none;
+    height: 500px;
 }
 
 .large{
+    background-image: url("../assets/images/Copia\ de\ sunny-day.jpg");
     width:100%;
+    background-size: cover;
+    background-position: center;
     margin: 0 auto;
     max-width:992;
     display: none;
+    height: 500px;
 }
 
 @media (min-width:475px){
@@ -27,6 +48,7 @@
         display: none;
     }
     .medium {
+        background-image: url("../assets/images/Copia\ de\ dawn.png");
         display: block;
     }
 }
@@ -35,7 +57,7 @@
     .medium {
         display: none;
     }
-    .large {
+    .large { 
         display: block;
     }
 }
